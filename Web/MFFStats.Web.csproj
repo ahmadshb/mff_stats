@@ -285,6 +285,10 @@
     <Content Include="packages.config" />
   </ItemGroup>
   <ItemGroup>
+    <ProjectReference Include="..\Models\MFFStats.Models.csproj">
+      <Project>{8c4bab6e-cb90-4a66-95ea-d4500edad268}</Project>
+      <Name>MFFStats.Models</Name>
+    </ProjectReference>
     <ProjectReference Include="..\Services\MFFStats.Services.csproj">
       <Project>{d13d5b8a-d299-4c6b-9609-2c63c414371c}</Project>
       <Name>MFFStats.Services</Name>

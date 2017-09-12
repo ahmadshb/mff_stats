@@ -4,11 +4,11 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{D13D5B8A-D299-4C6B-9609-2C63C414371C}</ProjectGuid>
+    <ProjectGuid>{8C4BAB6E-CB90-4A66-95EA-D4500EDAD268}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>MFFStats.Services</RootNamespace>
-    <AssemblyName>MFFStats.Services</AssemblyName>
+    <RootNamespace>MFFStats.Models</RootNamespace>
+    <AssemblyName>MFFStats.Models</AssemblyName>
     <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
   </PropertyGroup>
@@ -41,12 +41,6 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Properties\AssemblyInfo.cs" />
-  </ItemGroup>
-  <ItemGroup>
-    <ProjectReference Include="..\Models\MFFStats.Models.csproj">
-      <Project>{8c4bab6e-cb90-4a66-95ea-d4500edad268}</Project>
-      <Name>MFFStats.Models</Name>
-    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

@@ -7,6 +7,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MFFStats.Web", "Web\MFFStat
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MFFStats.Services", "Services\MFFStats.Services.csproj", "{D13D5B8A-D299-4C6B-9609-2C63C414371C}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MFFStats.Models", "Models\MFFStats.Models.csproj", "{8C4BAB6E-CB90-4A66-95EA-D4500EDAD268}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -21,6 +23,10 @@ Global
 		{D13D5B8A-D299-4C6B-9609-2C63C414371C}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{D13D5B8A-D299-4C6B-9609-2C63C414371C}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{D13D5B8A-D299-4C6B-9609-2C63C414371C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8C4BAB6E-CB90-4A66-95EA-D4500EDAD268}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8C4BAB6E-CB90-4A66-95EA-D4500EDAD268}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8C4BAB6E-CB90-4A66-95EA-D4500EDAD268}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8C4BAB6E-CB90-4A66-95EA-D4500EDAD268}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

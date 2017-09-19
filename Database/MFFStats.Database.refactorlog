@@ -105,4 +105,18 @@
     <Property Name="ParentElementType" Value="SqlTable" />
     <Property Name="NewName" Value="SideId" />
   </Operation>
+  <Operation Name="Rename Refactor" Key="170789a5-94b2-43a3-9acd-8897d123e2ca" ChangeDateTime="09/13/2017 19:34:35">
+    <Property Name="ElementName" Value="[dbo].[Characters].[RedDebuffDur]" />
+    <Property Name="ElementType" Value="SqlSimpleColumn" />
+    <Property Name="ParentElementName" Value="[dbo].[Characters]" />
+    <Property Name="ParentElementType" Value="SqlTable" />
+    <Property Name="NewName" Value="Debuff" />
+  </Operation>
+  <Operation Name="Rename Refactor" Key="1f90c550-69f8-40af-9b3e-96d12ea74ffb" ChangeDateTime="09/13/2017 19:34:43">
+    <Property Name="ElementName" Value="[dbo].[Characters].[RedCooldownDur]" />
+    <Property Name="ElementType" Value="SqlSimpleColumn" />
+    <Property Name="ParentElementName" Value="[dbo].[Characters]" />
+    <Property Name="ParentElementType" Value="SqlTable" />
+    <Property Name="NewName" Value="SkillCooldown" />
+  </Operation>
 </Operations>

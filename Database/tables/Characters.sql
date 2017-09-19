@@ -10,8 +10,8 @@
     [PhysicalAtk] INT NOT NULL DEFAULT 0, 
     [EnergyAtk] INT NOT NULL DEFAULT 0, 
     [AtkSpeed] DECIMAL(5, 2) NOT NULL DEFAULT 100.00, 
-    [CritRate] DECIMAL(5, 2) NOT NULL DEFAULT 15.00, 
-    [CritDmg] DECIMAL(5, 2) NOT NULL DEFAULT 0.00,  /* Grab default value */
+    [CritRate] DECIMAL(5, 2) NOT NULL DEFAULT 1.00, 
+    [CritDmg] DECIMAL(5, 2) NOT NULL DEFAULT 115.00,
     [IgnoreDef] DECIMAL(5, 2) NOT NULL DEFAULT 0.00, 
     [IgnoreDodge] DECIMAL(5, 2) NOT NULL DEFAULT 0.00, 
     [FireDmg] DECIMAL(5, 2) NOT NULL DEFAULT 0.00, 
@@ -22,14 +22,14 @@
     [PhysicalDef] INT NOT NULL DEFAULT 0, 
     [EnergyDef] INT NOT NULL DEFAULT 0, 
     [HP] INT NOT NULL DEFAULT 0, 
-    [RecoveryRate] DECIMAL(5, 2) NOT NULL DEFAULT 0.00, /* Grab default value */
-    [Dodge] DECIMAL(5, 2) NOT NULL DEFAULT 15.00, 
+    [RecoveryRate] DECIMAL(5, 2) NOT NULL DEFAULT 100.00, 
+    [Dodge] DECIMAL(5, 2) NOT NULL DEFAULT 1.00, 
     [FireResist] DECIMAL(5, 2) NOT NULL DEFAULT 0.00, 
     [ColdResist] DECIMAL(5, 2) NOT NULL DEFAULT 0.00, 
     [LightningResist] DECIMAL(5, 2) NOT NULL DEFAULT 0.00, 
     [PoisonResist] DECIMAL(5, 2) NOT NULL DEFAULT 0.00, 
     [MindResist] DECIMAL(5, 2) NOT NULL DEFAULT 0.00, 
     [MoveSpd] DECIMAL(5, 2) NOT NULL DEFAULT 100.00, 
-    [RedDebuffDur] DECIMAL(5, 2) NOT NULL DEFAULT 0.00, 
-    [RedCooldownDur] DECIMAL(5, 2) NOT NULL DEFAULT 0.00
+    [Debuff] DECIMAL(5, 2) NOT NULL DEFAULT 0.00, 
+    [SkillCooldown] DECIMAL(5, 2) NOT NULL DEFAULT 0.00
 )

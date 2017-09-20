@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace MFFStats.Models.Domain
 {
-    public class Characters
+    public class Character
     {
         public int Id { get; set; }
         public string Name { get; set; }

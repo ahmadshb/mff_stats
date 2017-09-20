@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace MFFStats.Models.Requests
 {
-    public class CharactersUpdateRequest : CharactersAddRequest
+    public class CharacterUpdateRequest : CharacterAddRequest
     {
         public int Id { get; set; }
     }

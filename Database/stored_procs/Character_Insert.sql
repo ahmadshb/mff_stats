@@ -1,4 +1,4 @@
-﻿CREATE PROCEDURE [dbo].[Characters_Insert]
+﻿CREATE PROCEDURE [dbo].[Character_Insert]
 	@id INT OUTPUT
 	, @name NVARCHAR(50)
 	, @typeId INT
@@ -67,7 +67,7 @@ DECLARE
 	, @_moveSpd DECIMAL(5,2) = 100.00
 	, @_debuff DECIMAL(5,2) = 0.00
 	, @_skillCooldown DECIMAL(5,2) = 0.00
-EXECUTE [dbo].[Characters_Insert]
+EXECUTE [dbo].[Character_Insert]
 	@_id OUTPUT
 	, @_name
 	, @_typeId
@@ -100,11 +100,11 @@ EXECUTE [dbo].[Characters_Insert]
 	, @_moveSpd
 	, @_debuff
 	, @_skillCooldown
-SELECT * FROM [dbo].[Characters] WHERE Id = @_id;
+SELECT * FROM [dbo].[Character] WHERE Id = @_id;
 
 */
 BEGIN
-	INSERT INTO [dbo].[Characters]
+	INSERT INTO [dbo].[Character]
 		([Name]
 		, [TypeId]
 		, [SpeciesId]

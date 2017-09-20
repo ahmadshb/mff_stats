@@ -9,15 +9,15 @@ using System.Threading.Tasks;
 
 namespace MFFStats.Services
 {
-    public class CharactersService : BaseService
+    public class CharacterService : BaseService
     {
-        public int Insert(CharactersAddRequest model)
+        public int Insert(CharacterAddRequest model)
         {
             int id = 0;
             using (SqlConnection conn = new SqlConnection(connString))
             {
                 conn.Open();
-                using (SqlCommand cmd = new SqlCommand("Characters_Insert", conn))
+                using (SqlCommand cmd = new SqlCommand("Character_Insert", conn))
                 {
                     cmd.CommandType = CommandType.StoredProcedure;
                     AddValues(model, cmd);
@@ -34,12 +34,12 @@ namespace MFFStats.Services
             return id;
         }
 
-        public void Update(CharactersUpdateRequest model)
+        public void Update(CharacterUpdateRequest model)
         {
             using (SqlConnection conn = new SqlConnection(connString))
             {
                 conn.Open();
-                using (SqlCommand cmd = new SqlCommand("Characters_Update", conn))
+                using (SqlCommand cmd = new SqlCommand("Character_Update", conn))
                 {
                     cmd.CommandType = CommandType.StoredProcedure;
                     cmd.Parameters.AddWithValue("@Id", model.Id);
@@ -51,7 +51,7 @@ namespace MFFStats.Services
             }
         }
 
-        private static void AddValues(CharactersAddRequest model, SqlCommand cmd)
+        private static void AddValues(CharacterAddRequest model, SqlCommand cmd)
         {
             cmd.Parameters.AddWithValue("@Name", model.Name);
             cmd.Parameters.AddWithValue("@TypeId", model.TypeId);

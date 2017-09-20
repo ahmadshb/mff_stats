@@ -1,8 +1,8 @@
-﻿CREATE PROCEDURE [dbo].[Characters_SelectAll]
+﻿CREATE PROCEDURE [dbo].[Character_SelectAll]
 AS
 /*
 
-EXEC Characters_SelectAll
+EXEC Character_SelectAll
 
 */
 BEGIN
@@ -40,7 +40,7 @@ BEGIN
 		, ch.[Debuff]
 		, ch.[SkillCooldown]
 	FROM
-		[Characters] ch JOIN [Gender] g ON [GenderId] = g.[Id]
+		[Character] ch JOIN [Gender] g ON [GenderId] = g.[Id]
 		JOIN [Side] sd ON [SideId] = sd.[Id]
 		JOIN [Species] sp ON [SpeciesId] = sp.[Id]
 		JOIN [Type] tp ON [TypeId] = tp.[Id]

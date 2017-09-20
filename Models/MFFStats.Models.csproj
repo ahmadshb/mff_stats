@@ -40,10 +40,10 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Domain\Characters.cs" />
+    <Compile Include="Domain\Character.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="Requests\CharactersAddRequest.cs" />
-    <Compile Include="Requests\CharactersUpdateRequest.cs" />
+    <Compile Include="Requests\CharacterAddRequest.cs" />
+    <Compile Include="Requests\CharacterUpdateRequest.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

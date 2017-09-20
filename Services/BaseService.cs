@@ -8,6 +8,6 @@ namespace MFFStats.Services
 {
     public abstract class BaseService
     {
-        protected string connString = System.Configuration.ConfigurationManager.ConnectionStrings["Defaultconnection"].ConnectionString;
+        protected string connString = System.Configuration.ConfigurationManager.ConnectionStrings["DefaultConnection"].ConnectionString;
     }
 }

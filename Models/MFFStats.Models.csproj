@@ -42,6 +42,8 @@
   <ItemGroup>
     <Compile Include="Domain\Characters.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Requests\CharactersAddRequest.cs" />
+    <Compile Include="Requests\CharactersUpdateRequest.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

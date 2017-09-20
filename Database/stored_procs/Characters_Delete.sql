@@ -1,10 +1,10 @@
-﻿CREATE PROCEDURE [dbo].[Character_Delete]
+﻿CREATE PROCEDURE [dbo].[Characters_Delete]
 	@id int
 AS
 /*
 
 DECLARE @_id INT = 9;
-EXEC [Character_Delete]
+EXEC [Characters_Delete]
 	@_id
 SELECT * FROM [dbo].[Characters]
 

@@ -70,7 +70,7 @@
     <Build Include="stored_procs\Characters_SelectAll.sql" />
     <Build Include="stored_procs\Characters_Insert.sql" />
     <Build Include="stored_procs\Characters_Update.sql" />
-    <Build Include="stored_procs\Character_Delete.sql" />
+    <Build Include="stored_procs\Characters_Delete.sql" />
   </ItemGroup>
   <ItemGroup>
     <RefactorLog Include="MFFStats.Database.refactorlog" />

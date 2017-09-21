@@ -2,125 +2,176 @@
 @{
     ViewBag.Title = "Character Page";
 }
-
+<style>
+    li{
+        margin-top:10px;
+    }
+</style>
 <div class="container-fluid">
-    <div class="row">
-        <div class="col-md-12" style="background-color:#132347">
-            <h3 class="text-center" style="color:white">
-                HERO DETAILS
-            </h3>
+    <div class="row" style="background-color:#132347; border:.5px solid black; height:60px">
+        <div class="col-md-12">
+            <h4 class="text-center" style="color:white; padding-top:15px">
+                <strong>HERO DETAILS</strong>
+            </h4>
         </div>
     </div>
     <div class="row">
-        <div class="col-md-3" style="background-color:#10182B; border:.5px solid black; height:558px">
-            <img alt="Bootstrap Image Preview" src="http://lorempixel.com/140/140/" />
-            <ul class="list-unstyled" style="color:#5082BA">
-                <li>
-                    <br />NAME
-                </li>
-                <li>
-                    COSTUME
-                </li>
-                <li>
-                    <br />RANK/MASTERY<span class="pull-right">Tier-2</span>
-                </li>
-                <li>
-                    <br />
-                </li>
-                <li>
-                    TYPE
-                </li>
-                <li>
-                    SPECIES
-                </li>
-                <li>
-                    GENDER
-                </li>
-                <li>
-                    SIDE
-                </li>
-                <li>
-                    ABILITY
-                </li>
-            </ul>
-        </div>
-        <div class="col-md-9">
-            <div class="row">
-                <div class="col-md-3" style="background-color:#1E263B; border:1px solid black">
-                    <h3 class="text-center" style="color:white">
-                        ALL
-                    </h3>
-                </div>
-                <div class="col-md-3" style="background-color:#1E263B; border:1px solid black">
-                    <h3 class="text-center" style="color:white">
-                        GEAR
-                    </h3>
-                </div>
-                <div class="col-md-3" style="background-color:#1E263B; border:1px solid black">
-                    <h3 class="text-center" style="color:white">
-                        ISO-8
-                    </h3>
-                </div>
-                <div class="col-md-3" style="background-color:#1E263B; border:1px solid black">
-                    <h3 class="text-center" style="color:white">
-                        CARD
-                    </h3>
-                </div>
+        <div class="col-md-3" style="border:.5px solid black; background-color:#10182B">
+            <div class="row" style="height:199px">
+                <img alt="Image Name" src="~/images/Wolverine.png" style="max-height:100%; max-width:100%" />
             </div>
-            <div class="row">
-                <div class="col-md-6" style="background-color:#10182B; border:.5px solid black; height:500px">
-                    <ol class="list-unstyled" style="color:#5082BA">
-                        <li>
-                            Lorem ipsum dolor sit amet
-                        </li>
-                        <li>
-                            Consectetur adipiscing elit
-                        </li>
-                        <li>
-                            Integer molestie lorem at massa
-                        </li>
-                        <li>
-                            Facilisis in pretium nisl aliquet
-                        </li>
-                        <li>
-                            Nulla volutpat aliquam velit
-                        </li>
-                        <li>
-                            Faucibus porta lacus fringilla vel
-                        </li>
-                        <li>
-                            Aenean sit amet erat nunc
-                        </li>
-                        <li>
-                            Eget porttitor lorem
-                        </li>
-                    </ol>
-                </div>
-                <div class="col-md-6" style="background-color:#10182B; border:.5px solid black; height:500px">
+            <div class="row" style="height:370px">
+                <div class="col-md-12">
                     <ul class="list-unstyled" style="color:#5082BA">
                         <li>
-                            Lorem ipsum dolor sit amet
+                            <strong style="color:white; font-size:larger">NAME</strong>
+                        </li>
+                        <li style="margin-top:0px">
+                            <strong style="color:tan">COSTUME</strong>
                         </li>
                         <li>
-                            Consectetur adipiscing elit
+                            <strong>RANK/MASTERY<span class="pull-right" style="color:yellow">Tier-2</span></strong>
                         </li>
                         <li>
-                            Integer molestie lorem at massa
+                            <br />
                         </li>
                         <li>
-                            Facilisis in pretium nisl aliquet
+                            <strong>TYPE</strong>
                         </li>
                         <li>
-                            Nulla volutpat aliquam velit
+                            <strong>SPECIES</strong>
                         </li>
                         <li>
-                            Faucibus porta lacus fringilla vel
+                            <strong>GENDER</strong>
                         </li>
                         <li>
-                            Aenean sit amet erat nunc
+                            <strong>SIDE</strong>
                         </li>
                         <li>
-                            Eget porttitor lorem
+                            <strong>ABILITY</strong>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-9">
+            <div class="row" style="background-color:#1E263B">
+                <div class="col-md-3" style="border:.5px solid black; height:50px">
+                    <h4 class="text-center" style="color:white; padding-top:5px">
+                        <strong>ALL</strong>
+                    </h4>
+                </div>
+                <div class="col-md-3" style="border:.5px solid black; height:50px">
+                    <h4 class="text-center" style="color:white; padding-top:5px">
+                        <strong>GEAR</strong>
+                    </h4>
+                </div>
+                <div class="col-md-3" style="border:.5px solid black; height:50px">
+                    <h4 class="text-center" style="color:white; padding-top:5px">
+                        <strong>ISO-8</strong>
+                    </h4>
+                </div>
+                <div class="col-md-3" style="border:.5px solid black; height:50px">
+                    <h4 class="text-center" style="color:white; padding-top:5px">
+                        <strong>CARD</strong>
+                    </h4>
+                </div>
+            </div>
+            <div class="row" style="background-color:#2B1A20; border:1px solid black; height:35px">
+                <h5 class="text-center" style="color:yellow"><strong>This is the info</strong></h5>
+            </div>
+            <div class="row">
+                <div class="col-md-6" style="background-color:#10182B; border:.5px solid black; height:485px">
+                    <div class="row" style="background-color:#17153C; border:.5px solid black">
+                        <h5 style="color:yellow; text-indent:16px"><strong>ATTACK</strong></h5>
+                    </div>
+                    <ul class="list-unstyled" style="color:#5082BA">
+                        <li>
+                            <strong>PHYSICAL ATK</strong>
+                        </li>
+                        <li>
+                            <strong>ENERGY ATK</strong>
+                        </li>
+                        <li>
+                            <strong>ATK SPEED</strong>
+                        </li>
+                        <li>
+                            <strong>CRITICAL RATE</strong>
+                        </li>
+                        <li>
+                            <strong>CRITICAL DAMAGE</strong>
+                        </li>
+                        <li>
+                            <strong>IGNORE DEFENSE</strong>
+                        </li>
+                        <li>
+                            <strong>IGNORE DODGE</strong>
+                        </li>
+                        <li>
+                            <strong>FIRE DAMAGE</strong>
+                        </li>
+                        <li>
+                            <strong>COLD DAMAGE</strong>
+                        </li>
+                        <li>
+                            <strong>LIGHTNING DAMAGE</strong>
+                        </li>
+                        <li>
+                            <strong>POISON DAMAGE</strong>
+                        </li>
+                        <li>
+                            <strong>MIND DAMAGE</strong>
+                        </li>
+                    </ul>
+                </div>
+                <div class="col-md-6" style="background-color:#10182B; border:.5px solid black; height:485px">
+                    <div class="row" style="background-color:#17153C; border:.5px solid black">
+                        <h5 style="color:yellow; text-indent:16px"><strong>DEFENSE</strong></h5>
+                    </div>
+                    <ul class="list-unstyled" style="color:#5082BA">
+                        <li>
+                            <strong>PHYSICAL DEF</strong>
+                        </li>
+                        <li>
+                            <strong>ENERGY DEF</strong>
+                        </li>
+                        <li>
+                            <strong>HP</strong>
+                        </li>
+                        <li>
+                            <strong>RECOVERY RATE</strong>
+                        </li>
+                        <li>
+                            <strong>DODGE</strong>
+                        </li>
+                        <li>
+                            <strong>FIRE RESIST</strong>
+                        </li>
+                        <li>
+                            <strong>COLD RESIST</strong>
+                        </li>
+                        <li>
+                            <strong>LIGHTNING RESIST</strong>
+                        </li>
+                        <li>
+                            <strong>POISON RESIST</strong>
+                        </li>
+                        <li>
+                            <strong>MIND RESIST</strong>
+                        </li>
+                    </ul>
+                    <div class="row" style="background-color:#17153C; border:.5px solid black">
+                        <h5 style="color:yellow; text-indent:16px"><strong>DEBUFF</strong></h5>
+                    </div>
+                    <ul class="list-unstyled" style="color:#5082BA">
+                        <li>
+                            <strong>MOVEMENT SPEED</strong>
+                        </li>
+                        <li>
+                            <strong>REDUCE DEBUFF DURATION</strong>
+                        </li>
+                        <li>
+                            <strong>REDUCE COOLDOWN DURATION</strong>
                         </li>
                     </ul>
                 </div>
@@ -128,7 +179,7 @@
         </div>
     </div>
     <div class="row">
-        <div class="col-md-12 text-center" style="background-color:#22304B">
+        <div class="col-md-12 text-center" style="background-color:#22304B; border:.5px solid black; height:60px">
             <button class="btn btn-primary" style="color:white">
                 CLOSE
             </button>

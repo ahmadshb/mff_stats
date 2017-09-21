@@ -1,4 +1,7 @@
-﻿using System;
+﻿using MFFStats.Models.Domain;
+using MFFStats.Models.Responses;
+using MFFStats.Services;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Net;
@@ -7,12 +10,25 @@ using System.Web.Http;
 
 namespace MFFStats.Web.Controllers.Api
 {
+    [RoutePrefix("api/character")]
     public class CharacterApiController : ApiController
     {
+        CharacterService svc = new CharacterService();
+
         // GET api/<controller>
-        public IEnumerable<string> Get()
+        [Route, HttpGet]
+        public HttpResponseMessage Get()
         {
-            return new string[] { "value1", "value2" };
+            try
+            {
+                ItemsResponse<Character> response = new ItemsResponse<Character>();
+                response.Items = svc.SelectAll();
+                return Request.CreateResponse(HttpStatusCode.OK, response);
+            }
+            catch (Exception ex)
+            {
+                return Request.CreateErrorResponse(HttpStatusCode.BadRequest, ex);
+            }
         }
 
         // GET api/<controller>/5

@@ -1,9 +1,8 @@
 ﻿using MFFStats.Models.Domain;
+using MFFStats.Models.Requests;
 using MFFStats.Models.Responses;
 using MFFStats.Services;
 using System;
-using System.Collections.Generic;
-using System.Linq;
 using System.Net;
 using System.Net.Http;
 using System.Web.Http;
@@ -15,7 +14,7 @@ namespace MFFStats.Web.Controllers.Api
     {
         CharacterService svc = new CharacterService();
 
-        // GET api/<controller>
+        // GET api/character
         [Route, HttpGet]
         public HttpResponseMessage Get()
         {
@@ -31,25 +30,74 @@ namespace MFFStats.Web.Controllers.Api
             }
         }
 
-        // GET api/<controller>/5
-        public string Get(int id)
+        // GET api/character/<id>
+        [Route("{id:int}"), HttpGet]
+        public HttpResponseMessage Get(int id)
         {
-            return "value";
+            try
+            {
+                ItemResponse<Character> response = new ItemResponse<Character>();
+                response.Item = svc.SelectById(id);
+                return Request.CreateResponse(HttpStatusCode.OK, response);
+            }
+            catch (Exception ex)
+            {
+                return Request.CreateErrorResponse(HttpStatusCode.BadRequest, ex);
+            }
         }
 
-        // POST api/<controller>
-        public void Post([FromBody]string value)
+        // POST api/character
+        [Route, HttpPost]
+        public HttpResponseMessage Post(CharacterAddRequest model)
         {
+            if (!ModelState.IsValid)
+            {
+                return Request.CreateErrorResponse(HttpStatusCode.BadRequest, ModelState);
+            }
+            try
+            {
+                ItemResponse<int> response = new ItemResponse<int>();
+                response.Item = svc.Insert(model);
+                return Request.CreateResponse(HttpStatusCode.OK, response);
+            }
+            catch (Exception ex)
+            {
+                return Request.CreateErrorResponse(HttpStatusCode.BadRequest, ex);
+            }
         }
 
-        // PUT api/<controller>/5
-        public void Put(int id, [FromBody]string value)
+        // PUT api/character/<id>
+        [Route("{id:int}"), HttpPut]
+        public HttpResponseMessage Put(CharacterUpdateRequest model)
         {
+            if (!ModelState.IsValid)
+            {
+                return Request.CreateErrorResponse(HttpStatusCode.BadRequest, ModelState);
+            }
+            try
+            {
+                svc.Update(model);
+                return Request.CreateResponse(HttpStatusCode.OK, new SuccessResponse());
+            }
+            catch (Exception ex)
+            {
+                return Request.CreateErrorResponse(HttpStatusCode.BadRequest, ex);
+            }
         }
 
-        // DELETE api/<controller>/5
-        public void Delete(int id)
+        // DELETE api/character/<id>
+        [Route("{id:int}"), HttpDelete]
+        public HttpResponseMessage Delete(int id)
         {
+            try
+            {
+                svc.Delete(id);
+                return Request.CreateResponse(HttpStatusCode.OK, new SuccessResponse());
+            }
+            catch (Exception ex)
+            {
+                return Request.CreateErrorResponse(HttpStatusCode.BadRequest, ex);
+            }
         }
     }
 }

@@ -5,6 +5,9 @@
     li {
         margin-top: 10px;
     }
+    [ng\:cloak], [ng-cloak], .ng-cloak {
+        display: none !important;
+    }
 </style>
 
 <div class="container-fluid" ng-controller="characterController as charVm">
@@ -24,31 +27,31 @@
                 <div class="col-md-12">
                     <ul class="list-unstyled" style="color:#5082BA">
                         <li>
-                            <strong style="color:white; font-size:larger">NAME</strong>
+                            <strong style="color:white; font-size:larger" ng-cloak>{{charVm.item.name}}</strong>
                         </li>
                         <li style="margin-top:0px">
-                            <strong style="color:tan">COSTUME</strong>
+                            <strong style="color:tan">COSTUME<span style="color:red">(TBD)</span></strong>
                         </li>
                         <li>
-                            <strong>RANK/MASTERY<span class="pull-right" style="color:yellow">Tier-2</span></strong>
+                            <strong>RANK/MASTERY<span style="color:red">(TBD)</span><span class="pull-right" style="color:yellow">Tier-2</span></strong>
                         </li>
                         <li>
                             <br />
                         </li>
                         <li>
-                            <strong>TYPE</strong>
+                            <strong>TYPE<span class="pull-right" style="color:white" ng-cloak>{{charVm.item.type | uppercase}}</span></strong>
                         </li>
                         <li>
-                            <strong>SPECIES</strong>
+                            <strong>SPECIES<span class="pull-right" style="color:white" ng-cloak>{{charVm.item.species | uppercase}}</span></strong>
                         </li>
                         <li>
-                            <strong>GENDER</strong>
+                            <strong>GENDER<span class="pull-right" style="color:white" ng-cloak>{{charVm.item.gender | uppercase}}</span></strong>
                         </li>
                         <li>
-                            <strong>SIDE</strong>
+                            <strong>SIDE<span class="pull-right" style="color:white" ng-cloak>{{charVm.item.side | uppercase}}</span></strong>
                         </li>
                         <li>
-                            <strong>ABILITY</strong>
+                            <strong>ABILITY<span style="color:red">(TBD)</span></strong>
                         </li>
                     </ul>
                 </div>
@@ -78,7 +81,7 @@
                 </div>
             </div>
             <div class="row" style="background-color:#2B1A20; border:1px solid black; height:35px">
-                <h5 class="text-center" style="color:yellow"><strong>This is the info</strong></h5>
+                <h5 class="text-center" style="color:yellow"><strong>This is the info<span style="color:red">(TBD)</span></strong></h5>
             </div>
             <div class="row">
                 <div class="col-md-6" style="background-color:#10182B; border:.5px solid black; height:485px">
@@ -87,40 +90,40 @@
                     </div>
                     <ul class="list-unstyled" style="color:#5082BA">
                         <li>
-                            <strong>PHYSICAL ATK</strong>
+                            <strong>PHYSICAL ATK<span class="pull-right" style="color:white" ng-cloak>{{charVm.item.physicalAtk}}</span></strong>
                         </li>
                         <li>
-                            <strong>ENERGY ATK</strong>
+                            <strong>ENERGY ATK<span class="pull-right" style="color:white" ng-cloak>{{charVm.item.energyAtk}}</span></strong>
                         </li>
                         <li>
-                            <strong>ATK SPEED</strong>
+                            <strong>ATK SPEED<span class="pull-right" style="color:white" ng-cloak>{{charVm.item.atkSpeed | number:2}}</span></strong>
                         </li>
                         <li>
-                            <strong>CRITICAL RATE</strong>
+                            <strong>CRITICAL RATE<span class="pull-right" style="color:white" ng-cloak>{{charVm.item.critRate | number:2}}</span></strong>
                         </li>
                         <li>
-                            <strong>CRITICAL DAMAGE</strong>
+                            <strong>CRITICAL DAMAGE<span class="pull-right" style="color:white" ng-cloak>{{charVm.item.critDmg | number:2}}</span></strong>
                         </li>
                         <li>
-                            <strong>IGNORE DEFENSE</strong>
+                            <strong>IGNORE DEFENSE<span class="pull-right" style="color:white" ng-cloak>{{charVm.item.ignoreDef | number:2}}</span></strong>
                         </li>
                         <li>
-                            <strong>IGNORE DODGE</strong>
+                            <strong>IGNORE DODGE<span class="pull-right" style="color:white" ng-cloak>{{charVm.item.ignoreDodge | number:2}}</span></strong>
                         </li>
                         <li>
-                            <strong>FIRE DAMAGE</strong>
+                            <strong>FIRE DAMAGE<span class="pull-right" style="color:white" ng-cloak>{{charVm.item.fireDmg | number:2}}</span></strong>
                         </li>
                         <li>
-                            <strong>COLD DAMAGE</strong>
+                            <strong>COLD DAMAGE<span class="pull-right" style="color:white" ng-cloak>{{charVm.item.coldDmg | number:2}}</span></strong>
                         </li>
                         <li>
-                            <strong>LIGHTNING DAMAGE</strong>
+                            <strong>LIGHTNING DAMAGE<span class="pull-right" style="color:white" ng-cloak>{{charVm.item.lightningDmg | number:2}}</span></strong>
                         </li>
                         <li>
-                            <strong>POISON DAMAGE</strong>
+                            <strong>POISON DAMAGE<span class="pull-right" style="color:white" ng-cloak>{{charVm.item.poisonDmg | number:2}}</span></strong>
                         </li>
                         <li>
-                            <strong>MIND DAMAGE</strong>
+                            <strong>MIND DAMAGE<span class="pull-right" style="color:white" ng-cloak>{{charVm.item.mindDmg | number:2}}</span></strong>
                         </li>
                     </ul>
                 </div>
@@ -130,34 +133,34 @@
                     </div>
                     <ul class="list-unstyled" style="color:#5082BA">
                         <li>
-                            <strong>PHYSICAL DEF</strong>
+                            <strong>PHYSICAL DEF<span class="pull-right" style="color:white" ng-cloak>{{charVm.item.physicalDef}}</span></strong>
                         </li>
                         <li>
-                            <strong>ENERGY DEF</strong>
+                            <strong>ENERGY DEF<span class="pull-right" style="color:white" ng-cloak>{{charVm.item.energyDef}}</span></strong>
                         </li>
                         <li>
-                            <strong>HP</strong>
+                            <strong>HP<span class="pull-right" style="color:white" ng-cloak>{{charVm.item.hp}}</span></strong>
                         </li>
                         <li>
-                            <strong>RECOVERY RATE</strong>
+                            <strong>RECOVERY RATE<span class="pull-right" style="color:white" ng-cloak>{{charVm.item.recoveryRate | number:2}}</span></strong>
                         </li>
                         <li>
-                            <strong>DODGE</strong>
+                            <strong>DODGE<span class="pull-right" style="color:white" ng-cloak>{{charVm.item.dodge | number:2}}</span></strong>
                         </li>
                         <li>
-                            <strong>FIRE RESIST</strong>
+                            <strong>FIRE RESIST<span class="pull-right" style="color:white" ng-cloak>{{charVm.item.fireResist | number:2}}</span></strong>
                         </li>
                         <li>
-                            <strong>COLD RESIST</strong>
+                            <strong>COLD RESIST<span class="pull-right" style="color:white" ng-cloak>{{charVm.item.coldResist | number:2}}</span></strong>
                         </li>
                         <li>
-                            <strong>LIGHTNING RESIST</strong>
+                            <strong>LIGHTNING RESIST<span class="pull-right" style="color:white" ng-cloak>{{charVm.item.lightningResist | number:2}}</span></strong>
                         </li>
                         <li>
-                            <strong>POISON RESIST</strong>
+                            <strong>POISON RESIST<span class="pull-right" style="color:white" ng-cloak>{{charVm.item.poisonResist | number:2}}</span></strong>
                         </li>
                         <li>
-                            <strong>MIND RESIST</strong>
+                            <strong>MIND RESIST<span class="pull-right" style="color:white" ng-cloak>{{charVm.item.mindResist | number:2}}</span></strong>
                         </li>
                     </ul>
                     <div class="row" style="background-color:#17153C; border:.5px solid black">
@@ -165,13 +168,13 @@
                     </div>
                     <ul class="list-unstyled" style="color:#5082BA">
                         <li>
-                            <strong>MOVEMENT SPEED</strong>
+                            <strong>MOVEMENT SPEED<span class="pull-right" style="color:white" ng-cloak>{{charVm.item.moveSpd | number:2}}</span></strong>
                         </li>
                         <li>
-                            <strong>REDUCE DEBUFF DURATION</strong>
+                            <strong>REDUCE DEBUFF DURATION<span class="pull-right" style="color:white" ng-cloak>{{charVm.item.debuff | number:2}}</span></strong>
                         </li>
                         <li>
-                            <strong>REDUCE COOLDOWN DURATION</strong>
+                            <strong>REDUCE COOLDOWN DURATION<span class="pull-right" style="color:white" ng-cloak>{{charVm.item.skillCooldown | number:2}}</span></strong>
                         </li>
                     </ul>
                 </div>

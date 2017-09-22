@@ -16,7 +16,7 @@
         vm.$scope = $scope;
         vm.service = service;
         vm.$onInit = _init;
-        vm.id = 50;  // hard code, replace after home page (character list) completion
+        vm.id = 1;  // hard code, replace after home page (character list) completion
 
         // The Fold
         // Initialize

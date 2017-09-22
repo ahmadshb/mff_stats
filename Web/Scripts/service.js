@@ -80,7 +80,7 @@
             }
 
             function _getByIdFailed(err) {
-                console.log("Get by ID failed", err);
+                console.log("Get by ID failed", err.status, err.statusText);
                 return $q.reject(err);
             }
         }

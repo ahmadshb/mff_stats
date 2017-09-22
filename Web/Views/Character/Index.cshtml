@@ -1,13 +1,13 @@
-﻿
-@{
+﻿@{
     ViewBag.Title = "Character Page";
 }
 <style>
-    li{
-        margin-top:10px;
+    li {
+        margin-top: 10px;
     }
 </style>
-<div class="container-fluid">
+
+<div class="container-fluid" ng-controller="characterController as charVm">
     <div class="row" style="background-color:#132347; border:.5px solid black; height:60px">
         <div class="col-md-12">
             <h4 class="text-center" style="color:white; padding-top:15px">
@@ -186,3 +186,7 @@
         </div>
     </div>
 </div>
+
+@section scripts{
+    @Scripts.Render("~/bundles/character")
+}

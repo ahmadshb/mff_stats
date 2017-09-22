@@ -38,6 +38,13 @@ namespace MFFStats.Web
             bundles.Add(new ScriptBundle("~/bundles/angular").Include(
                       "~/Scripts/angular.min.js"));
 
+            // Service
+            bundles.Add(new ScriptBundle("~/bundles/service").Include(
+                      "~/Scripts/service.js"));
+
+            // Character Controller
+            bundles.Add(new ScriptBundle("~/bundles/character").Include(
+                      "~/Scripts/Character/CharacterController.js"));
         }
     }
 }

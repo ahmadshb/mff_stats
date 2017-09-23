@@ -58,12 +58,12 @@
                 .catch(_getFailed);
 
             function _getComplete(res) {
-                console.log("Get Complete", res);
+                console.log("Get Complete", res.status, res.statusText);
                 return res;
             }
 
             function _getFailed(err) {
-                console.log("Get Failed", err);
+                console.log("Get Failed", err.status, err.statusText);
                 return $q.reject(err);
             }
         }
@@ -75,12 +75,12 @@
                 .catch(_getByIdFailed);
 
             function _getByIdComplete(res) {
-                console.log("Get by ID success", res.status, res.statusText);
+                console.log("Get by ID Complete", res.status, res.statusText);
                 return res;
             }
 
             function _getByIdFailed(err) {
-                console.log("Get by ID failed", err.status, err.statusText);
+                console.log("Get by ID Failed", err.status, err.statusText);
                 return $q.reject(err);
             }
         }

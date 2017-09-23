@@ -42,6 +42,10 @@ namespace MFFStats.Web
             bundles.Add(new ScriptBundle("~/bundles/service").Include(
                       "~/Scripts/service.js"));
 
+            // Home Controller
+            bundles.Add(new ScriptBundle("~/bundles/home").Include(
+                      "~/Scripts/Home/HomeController.js"));
+
             // Character Controller
             bundles.Add(new ScriptBundle("~/bundles/character").Include(
                       "~/Scripts/Character/CharacterController.js"));

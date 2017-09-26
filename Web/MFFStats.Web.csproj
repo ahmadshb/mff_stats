@@ -194,6 +194,8 @@
     <Compile Include="App_Start\RouteConfig.cs" />
     <Compile Include="App_Start\Startup.Auth.cs" />
     <Compile Include="App_Start\WebApiConfig.cs" />
+    <Compile Include="Areas\Admin\AdminAreaRegistration.cs" />
+    <Compile Include="Areas\Admin\Controllers\CharacterController.cs" />
     <Compile Include="Controllers\AccountController.cs" />
     <Compile Include="Controllers\Api\CharacterApiController.cs" />
     <Compile Include="Controllers\CharacterController.cs" />
@@ -228,6 +230,10 @@
     <Content Include="Content\bootstrap.css.map" />
     <Content Include="Content\bootstrap-theme.min.css.map" />
     <Content Include="Content\bootstrap-theme.css.map" />
+    <Content Include="Areas\Admin\Views\web.config" />
+    <Content Include="Areas\Admin\Views\_ViewStart.cshtml" />
+    <Content Include="Areas\Admin\Views\Shared\_Layout.cshtml" />
+    <Content Include="Areas\Admin\Views\Character\Manage.cshtml" />
     <None Include="Scripts\jquery-3.1.1.intellisense.js" />
     <Content Include="images\Wolverine.png" />
     <Content Include="Scripts\angular.js" />
@@ -290,6 +296,8 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
+    <Folder Include="Areas\Admin\Models\" />
+    <Folder Include="Areas\Admin\Views\AdminCharacter\" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="packages.config" />

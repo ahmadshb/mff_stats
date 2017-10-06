@@ -1,9 +1,9 @@
 ﻿<!DOCTYPE html>
-<html>
+<html ng-app="mainApp">
 <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>@ViewBag.Title - My ASP.NET Application</title>
+    <title>@ViewBag.Title - MFF Stats</title>
     @Styles.Render("~/Content/css")
     @Scripts.Render("~/bundles/modernizr")
 </head>
@@ -35,6 +35,9 @@
 
     @Scripts.Render("~/bundles/jquery")
     @Scripts.Render("~/bundles/bootstrap")
+    @Scripts.Render("~/bundles/angular")
+    @Scripts.Render("~/bundles/mainApp")
+    @Scripts.Render("~/bundles/service")
     @RenderSection("scripts", required: false)
 </body>
 </html>

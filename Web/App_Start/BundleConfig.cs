@@ -49,6 +49,10 @@ namespace MFFStats.Web
             // Character Controller
             bundles.Add(new ScriptBundle("~/bundles/character").Include(
                       "~/Scripts/Character/CharacterController.js"));
+
+            // Character Manage Controller
+            bundles.Add(new ScriptBundle("~/bundles/manage").Include(
+                      "~/Scripts/Character/ManageController.js"));
         }
     }
 }

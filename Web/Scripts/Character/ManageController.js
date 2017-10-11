@@ -16,6 +16,7 @@
         vm.$scope = $scope;
         vm.service = service;
         vm.$onInit = _init;
+        vm.add = _add;
 
         // The Fold
         // Initialize
@@ -23,6 +24,11 @@
             console.log("Initialized.");
             vm.service.get('/api/character/')
                 .then(_getSuccess, _error);
+        }
+
+        // Add Button
+        function _add() {
+            console.log("Add button clicked.");
         }
 
         // Get By Id Success

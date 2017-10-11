@@ -29,6 +29,7 @@
         // Add Button
         function _add() {
             console.log("Add button clicked.");
+            $window.location.href = "/admin/character/add";
         }
 
         // Get By Id Success

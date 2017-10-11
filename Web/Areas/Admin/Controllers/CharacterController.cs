@@ -10,9 +10,14 @@ namespace MFFStats.Web.Areas.Admin.Controllers
     [RoutePrefix("character")]
     public class CharacterController : Controller
     {
-        // GET: Admin/Character
         [Route("manage")]
         public ActionResult Manage()
+        {
+            return View();
+        }
+
+        [Route("add")]
+        public ActionResult Add()
         {
             return View();
         }

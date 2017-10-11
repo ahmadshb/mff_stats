@@ -36,7 +36,6 @@ namespace MFFStats.Web
 
             // Angular
             bundles.Add(new ScriptBundle("~/bundles/angular").Include(
-                      "~/Scripts/angular-ui-router-1.0.3",
                       "~/Scripts/angular.min.js"));
 
             // Service
@@ -53,8 +52,7 @@ namespace MFFStats.Web
 
             // Character Manage Controller
             bundles.Add(new ScriptBundle("~/bundles/manage").Include(
-                      "~/Scripts/Character/ManageController.js",
-                      "~/Scripts/Character/ManageRouter.js"));
+                      "~/Scripts/Character/ManageController.js"));
         }
     }
 }

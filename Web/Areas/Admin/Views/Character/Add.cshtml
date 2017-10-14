@@ -5,40 +5,118 @@
 <div class="container-fluid">
     <div class="row">
         <div class="col-md-4">
-            <form role="form">
-                <div class="form-group">
+            <form class="form-horizontal">
+                <fieldset>
 
-                    <label for="exampleInputEmail1">
-                        Email address
-                    </label>
-                    <input type="email" class="form-control" id="exampleInputEmail1" />
-                </div>
-                <div class="form-group">
+                    <!-- Form Name -->
+                    <legend>Form Name</legend>
 
-                    <label for="exampleInputPassword1">
-                        Password
-                    </label>
-                    <input type="password" class="form-control" id="exampleInputPassword1" />
-                </div>
-                <div class="form-group">
+                    <!-- Text input-->
+                    <div class="form-group">
+                        <label class="col-md-4 control-label" for="name">Name</label>
+                        <div class="col-md-4">
+                            <input id="name" name="name" type="text" placeholder="Wolverine" class="form-control input-md">
 
-                    <label for="exampleInputFile">
-                        File input
-                    </label>
-                    <input type="file" id="exampleInputFile" />
-                    <p class="help-block">
-                        Example block-level help text here.
-                    </p>
-                </div>
-                <div class="checkbox">
+                        </div>
+                    </div>
 
-                    <label>
-                        <input type="checkbox" /> Check me out
-                    </label>
-                </div>
-                <button type="submit" class="btn btn-default">
-                    Submit
-                </button>
+                    <!-- Select Basic -->
+                    <div class="form-group">
+                        <label class="col-md-4 control-label" for="type">Type</label>
+                        <div class="col-md-4">
+                            <select id="type" name="type" class="form-control">
+                                <option value="1">Combat</option>
+                                <option value="2">Blast</option>
+                                <option value="3">Speed</option>
+                                <option value="4">Universal</option>
+                            </select>
+                        </div>
+                    </div>
+
+                    <!-- Select Basic -->
+                    <div class="form-group">
+                        <label class="col-md-4 control-label" for="gender">Gender</label>
+                        <div class="col-md-4">
+                            <select id="gender" name="gender" class="form-control">
+                                <option value="1">Male</option>
+                                <option value="2">Female</option>
+                                <option value="3">Neutral</option>
+                            </select>
+                        </div>
+                    </div>
+
+                    <!-- Select Basic -->
+                    <div class="form-group">
+                        <label class="col-md-4 control-label" for="species">Species</label>
+                        <div class="col-md-4">
+                            <select id="species" name="species" class="form-control">
+                                <option value="1">Human</option>
+                                <option value="2">Inhuman</option>
+                                <option value="3">Mutant</option>
+                                <option value="4">Alien</option>
+                                <option value="5">Creature</option>
+                            </select>
+                        </div>
+                    </div>
+
+                    <!-- Select Basic -->
+                    <div class="form-group">
+                        <label class="col-md-4 control-label" for="side">Side</label>
+                        <div class="col-md-4">
+                            <select id="side" name="side" class="form-control">
+                                <option value="1">Super Hero</option>
+                                <option value="2">Super Villain</option>
+                                <option value="3">Neutral</option>
+                            </select>
+                        </div>
+                    </div>
+
+                    <!-- Text input-->
+                    <div class="form-group">
+                        <label class="col-md-4 control-label" for="physicalAtk">Physical Attack</label>
+                        <div class="col-md-4">
+                            <input id="physicalAtk" name="physicalAtk" type="text" placeholder="1000" class="form-control input-md">
+
+                        </div>
+                    </div>
+
+                    <!-- Text input-->
+                    <div class="form-group">
+                        <label class="col-md-4 control-label" for="energyAtk">Energy Attack</label>
+                        <div class="col-md-4">
+                            <input id="energyAtk" name="energyAtk" type="text" placeholder="1000" class="form-control input-md">
+
+                        </div>
+                    </div>
+
+                    <!-- Text input-->
+                    <div class="form-group">
+                        <label class="col-md-4 control-label" for="physicalDef">Physical Defense</label>
+                        <div class="col-md-4">
+                            <input id="physicalDef" name="physicalDef" type="text" placeholder="1000" class="form-control input-md">
+
+                        </div>
+                    </div>
+
+                    <!-- Text input-->
+                    <div class="form-group">
+                        <label class="col-md-4 control-label" for="energyDef">Energy Defense</label>
+                        <div class="col-md-4">
+                            <input id="energyDef" name="energyDef" type="text" placeholder="1000" class="form-control input-md">
+
+                        </div>
+                    </div>
+
+                    <!-- Text input-->
+                    <div class="form-group">
+                        <label class="col-md-4 control-label" for="hp">HP</label>
+                        <div class="col-md-4">
+                            <input id="hp" name="hp" type="text" placeholder="1000" class="form-control input-md">
+
+                        </div>
+                    </div>
+
+                </fieldset>
             </form>
         </div>
         <div class="col-md-4">

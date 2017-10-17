@@ -4,26 +4,21 @@
 
 <div class="container-fluid">
     <div class="row">
-        <div class="col-md-4">
-            <form class="form-horizontal">
-                <fieldset>
-
-                    <!-- Form Name -->
-                    <legend>Form Name</legend>
-
-                    <!-- Text input-->
+        <!-- Start Form -->
+        <form class="form-horizontal">
+            <fieldset>
+                <legend>Add New Character</legend>
+                <!-- Start Basic Stats -->
+                <div class="col-md-4">
                     <div class="form-group">
-                        <label class="col-md-4 control-label" for="name">Name</label>
-                        <div class="col-md-4">
+                        <label class="col-md-6 control-label" for="name">Name</label>
+                        <div class="col-md-6">
                             <input id="name" name="name" type="text" placeholder="Wolverine" class="form-control input-md">
-
                         </div>
                     </div>
-
-                    <!-- Select Basic -->
                     <div class="form-group">
-                        <label class="col-md-4 control-label" for="type">Type</label>
-                        <div class="col-md-4">
+                        <label class="col-md-6 control-label" for="type">Type</label>
+                        <div class="col-md-6">
                             <select id="type" name="type" class="form-control">
                                 <option value="1">Combat</option>
                                 <option value="2">Blast</option>
@@ -32,11 +27,9 @@
                             </select>
                         </div>
                     </div>
-
-                    <!-- Select Basic -->
                     <div class="form-group">
-                        <label class="col-md-4 control-label" for="gender">Gender</label>
-                        <div class="col-md-4">
+                        <label class="col-md-6 control-label" for="gender">Gender</label>
+                        <div class="col-md-6">
                             <select id="gender" name="gender" class="form-control">
                                 <option value="1">Male</option>
                                 <option value="2">Female</option>
@@ -44,11 +37,9 @@
                             </select>
                         </div>
                     </div>
-
-                    <!-- Select Basic -->
                     <div class="form-group">
-                        <label class="col-md-4 control-label" for="species">Species</label>
-                        <div class="col-md-4">
+                        <label class="col-md-6 control-label" for="species">Species</label>
+                        <div class="col-md-6">
                             <select id="species" name="species" class="form-control">
                                 <option value="1">Human</option>
                                 <option value="2">Inhuman</option>
@@ -58,11 +49,9 @@
                             </select>
                         </div>
                     </div>
-
-                    <!-- Select Basic -->
                     <div class="form-group">
-                        <label class="col-md-4 control-label" for="side">Side</label>
-                        <div class="col-md-4">
+                        <label class="col-md-6 control-label" for="side">Side</label>
+                        <div class="col-md-6">
                             <select id="side" name="side" class="form-control">
                                 <option value="1">Super Hero</option>
                                 <option value="2">Super Villain</option>
@@ -70,61 +59,43 @@
                             </select>
                         </div>
                     </div>
-
-                    <!-- Text input-->
                     <div class="form-group">
-                        <label class="col-md-4 control-label" for="physicalAtk">Physical Attack</label>
-                        <div class="col-md-4">
+                        <label class="col-md-6 control-label" for="physicalAtk">Physical Attack</label>
+                        <div class="col-md-6">
                             <input id="physicalAtk" name="physicalAtk" type="text" placeholder="1000" class="form-control input-md">
 
                         </div>
                     </div>
-
-                    <!-- Text input-->
                     <div class="form-group">
-                        <label class="col-md-4 control-label" for="energyAtk">Energy Attack</label>
-                        <div class="col-md-4">
+                        <label class="col-md-6 control-label" for="energyAtk">Energy Attack</label>
+                        <div class="col-md-6">
                             <input id="energyAtk" name="energyAtk" type="text" placeholder="1000" class="form-control input-md">
-
                         </div>
                     </div>
-
-                    <!-- Text input-->
                     <div class="form-group">
-                        <label class="col-md-4 control-label" for="physicalDef">Physical Defense</label>
-                        <div class="col-md-4">
+                        <label class="col-md-6 control-label" for="physicalDef">Physical Defense</label>
+                        <div class="col-md-6">
                             <input id="physicalDef" name="physicalDef" type="text" placeholder="1000" class="form-control input-md">
-
                         </div>
                     </div>
-
-                    <!-- Text input-->
                     <div class="form-group">
-                        <label class="col-md-4 control-label" for="energyDef">Energy Defense</label>
-                        <div class="col-md-4">
+                        <label class="col-md-6 control-label" for="energyDef">Energy Defense</label>
+                        <div class="col-md-6">
                             <input id="energyDef" name="energyDef" type="text" placeholder="1000" class="form-control input-md">
-
                         </div>
                     </div>
-
-                    <!-- Text input-->
                     <div class="form-group">
-                        <label class="col-md-4 control-label" for="hp">HP</label>
-                        <div class="col-md-4">
+                        <label class="col-md-6 control-label" for="hp">HP</label>
+                        <div class="col-md-6">
                             <input id="hp" name="hp" type="text" placeholder="1000" class="form-control input-md">
-
                         </div>
                     </div>
+                </div>
+                <!-- End Basic Stats -->
 
-                </fieldset>
-            </form>
-        </div>
-        <div class="col-md-4">
-            <form class="form-horizontal">
-                <fieldset>
+                <!-- Start Offense Stats -->
+                <div class="col-md-4">
 
-                    <!-- Form Name -->
-                    <legend>Form Name</legend>
 
                     <!-- Text input-->
                     <div class="form-group">
@@ -216,15 +187,11 @@
                         </div>
                     </div>
 
-                </fieldset>
-            </form>
-        </div>
-        <div class="col-md-4">
-            <form class="form-horizontal">
-                <fieldset>
+                </div>
+                <!-- End Offense Stats -->
 
-                    <!-- Form Name -->
-                    <legend>Form Name</legend>
+                <!-- Start Defense/Debuff Stats -->
+                <div class="col-md-4">
 
                     <!-- Text input-->
                     <div class="form-group">
@@ -316,8 +283,10 @@
                         </div>
                     </div>
 
-                </fieldset>
-            </form>
-        </div>
+                </div>
+                <!-- End Defense/Debuff Stats -->
+            </fieldset>
+        </form>
+        <!-- End Form -->
     </div>
 </div>

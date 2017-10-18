@@ -241,6 +241,7 @@
     <Content Include="Scripts\angular.min.js" />
     <Content Include="Scripts\bootstrap.js" />
     <Content Include="Scripts\bootstrap.min.js" />
+    <Content Include="Scripts\Character\AddController.js" />
     <Content Include="Scripts\Character\CharacterController.js" />
     <Content Include="Scripts\Character\ManageController.js" />
     <Content Include="Scripts\Home\HomeController.js" />

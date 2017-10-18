@@ -2,7 +2,7 @@
     ViewBag.Title = "Add";
 }
 
-<div class="container-fluid">
+<div class="container-fluid" ng-controller="addController as addVm">
     <div class="row">
         <!-- Start Form -->
         <form class="form-horizontal">
@@ -224,4 +224,12 @@
         </form>
         <!-- End Form -->
     </div>
+    <div class="row">
+        <button class="btn btn-info" type="button">Load Defaults</button>
+        <button class="btn btn-primary" type="button">Add Character</button>
+    </div>
 </div>
+
+@section scripts{
+    @Scripts.Render("~/bundles/add")
+}

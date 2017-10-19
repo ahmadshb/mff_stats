@@ -35,6 +35,28 @@
         // Load Button
         function _load() {
             console.log("Load button clicked.");
+            vm.item = {
+                "atkSpeed": 100,
+                "critRate": 1,
+                "critDmg": 115,
+                "ignoreDef": 0,
+                "ignoreDodge": 0,
+                "fireDmg": 0,
+                "coldDmg": 0,
+                "lightningDmg": 0,
+                "poisonDmg": 0,
+                "mindDmg": 0,
+                "recoveryRate": 100,
+                "dodge": 1,
+                "moveSpd": 100,
+                "debuff": 0,
+                "skillCooldown": 0,
+                "fireResist": 0,
+                "coldResist": 0,
+                "lightningResist": 0,
+                "poisonResist": 0,
+                "mindResist": 0
+            }
         }
 
         // Get By Id Success

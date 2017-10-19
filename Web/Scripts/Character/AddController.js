@@ -16,7 +16,8 @@
         vm.$scope = $scope;
         vm.service = service;
         vm.$onInit = _init;
-        //vm.add = _add;
+        vm.add = _add;
+        vm.load = _load;
 
         // The Fold
         // Initialize
@@ -27,10 +28,14 @@
         }
 
         // Add Button
-        //function _add() {
-        //    console.log("Add button clicked.");
-        //    $window.location.href = "/admin/character/add";
-        //}
+        function _add() {
+            console.log("Add button clicked.");
+        }
+
+        // Load Button
+        function _load() {
+            console.log("Load button clicked.");
+        }
 
         // Get By Id Success
         //function _getSuccess(res) {

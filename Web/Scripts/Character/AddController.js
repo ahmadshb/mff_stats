@@ -30,6 +30,8 @@
         // Add Button
         function _add() {
             console.log("Add button clicked.");
+            vm.item.tier2 = 0;
+            console.log(vm.item);
         }
 
         // Load Button

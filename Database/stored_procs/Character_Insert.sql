@@ -5,7 +5,7 @@
 	, @speciesId INT
 	, @genderId INT
 	, @sideId INT
-	, @tier2 INT
+	, @tier2 BIT
 	, @physicalAtk INT
 	, @energyAtk INT
 	, @atkSpeed DECIMAL(5,2)
@@ -41,7 +41,7 @@ DECLARE
 	, @_speciesId INT = 1
 	, @_genderId INT = 1
 	, @_sideId INT = 1
-	, @_tier2 INT = 1
+	, @_tier2 BIT = 0
 	, @_physicalAtk INT = 9999
 	, @_energyAtk INT = 9999
 	, @_atkSpeed DECIMAL(5,2) = 100.00

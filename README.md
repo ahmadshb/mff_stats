@@ -13,4 +13,10 @@ Stat calculator for Marvel Future Fight
   5. Uniform
 - Native stats (possibly view on character details view)
 - Card stats view
+- Option to change stats:
+  1. ISO set
+  2. Individual ISOs
+  3. Custom Gear
+  4. Urus (+amp)
+  5. Cards
 
